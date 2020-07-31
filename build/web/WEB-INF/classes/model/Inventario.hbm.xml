@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30/07/2020 09:45:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Inventario" table="inventario" catalog="producto" optimistic-lock="version">
+        <id name="idInventario" type="java.lang.Integer">
+            <column name="idInventario" />
+            <generator class="identity" />
+        </id>
+        <property name="nombreProducto" type="string">
+            <column name="nombreProducto" length="40" />
+        </property>
+        <property name="fechaIngreso" type="date">
+            <column name="fechaIngreso" length="10" />
+        </property>
+        <property name="cantidad" type="string">
+            <column name="cantidad" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
